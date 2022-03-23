@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-class UserService{
+class UserController{
 
     async findAll(req, res){
         await User.findAll()
@@ -70,4 +70,4 @@ class UserService{
 
 }
 
-export default new UserService();
+export default new UserController();

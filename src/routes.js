@@ -1,11 +1,11 @@
 import { Router} from 'express';
-import UserService from './service/UserService';
+import UserController from './controller/UserController';
 
 const routes = new Router();
 
-routes.get('/api/users', UserService.findAll);
+routes.get('/api/users', UserController.findAll);
 
-routes.get('/api/users/:id', UserService.findById);
+routes.get('/api/users/:id', UserController.findById);
 
 
 
